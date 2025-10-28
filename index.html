@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clinic Management System</h1>
+
+        <div class="form">
+            <input type="text" id="name" placeholder="Patient Name">
+            <input type="number" id="age" placeholder="Age">
+            <input type="text" id="disease" placeholder="Disease">
+            <button onclick="addPatient()">Add Patient</button>
+        </div>
+
+        <h2>Patient List</h2>
+        <table id="patientTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Disease</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Patients will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
